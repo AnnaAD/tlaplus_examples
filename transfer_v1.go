@@ -61,8 +61,6 @@ func main() {
 	for j:=0; j < 3000; j++ {
 		rand.Seed(time.Now().UnixNano())
 
-		
-
 		var wg sync.WaitGroup
 		for i := 0; i < NumTransfers; i++ {
 			wg.Add(1)
